@@ -1,0 +1,80 @@
+#listing-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle at top left, #bfd3d5, #f5f5f500, #f5f5f500), radial-gradient(circle at bottom right, #bfd3d5, #f5f5f500, #f5f5f500);
+  justify-content: center;
+
+  #center-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+    position: relative;
+    background: linear-gradient(to bottom right, #fff, #f5f5f5 20%, #f5f5f5 80%, #fff 100%);
+    border: 3px solid #4cafb9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 128px rgba($color: #bfd3d5, $alpha: 0.5);
+
+    #upper-details {
+      position: absolute;
+      width: 100%;
+
+      .shoe-title {
+        font-family: 'Neufile';
+        font-weight: 700;
+        font-size: 48px;
+        color: #000;
+        margin: 24px;
+        margin-bottom: 0px;
+      }
+
+      .shoe-desc {
+        font-family: 'Neufile';
+        font-size: 18px;
+        color: #000;
+        margin-top: 0px;
+        margin-left: 24px;
+      }
+    }
+
+    .demo-shoe {
+      height: 100%;
+      width: 100%;
+      background: url(/assets/blazer.jpeg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    #lower-details {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      .shoe-price {
+        font-family: 'Neufile';
+        font-weight: 700;
+        font-size: 48px;
+        color: #000;
+        margin: 24px;
+        margin-bottom: 0px;
+      }
+
+      .shoe-artist {
+        font-family: 'Neufile';
+        font-size: 24px;
+        color: #000;
+        margin-top: 0px;
+        margin-left: 24px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

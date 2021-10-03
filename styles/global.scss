@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@font-face {
+  font-family: 'Albra';
+  src: url('/fonts/Albra/Albra Regular.otf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albra';
+  src: url('/fonts/Albra/Albra Medium.otf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albra';
+  src: url('/fonts/Albra/Albra Semi.otf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Albra';
+  src: url('/fonts/Albra/Albra Bold.otf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neufile';
+  src: url('/fonts/Neufile Grotesk/Neufile Grotesk Regular.otf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Horizon';
+  src: url('/fonts/Horizon/Horizon Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Horizon';
+  src: url('/fonts/Horizon/Horizon Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, button, input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100vw;
+  background: #000;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+} 
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
