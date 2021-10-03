@@ -1,13 +1,26 @@
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
+
 #home-page {
   height: 100vh;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #000;
+  position: fixed;
 
   #center {
     display: flex;
@@ -35,6 +48,16 @@
     #center {
       img {
         width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #home-page {
+    #center {
+      #coming-soon {
+        margin-bottom: 100px;
       }
     }
   }
